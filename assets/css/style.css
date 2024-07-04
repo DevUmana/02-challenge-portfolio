@@ -201,10 +201,7 @@ main {
 .flex-item h3 {
   color: var(--primary);
   font-size: 1.6rem;
-}
-
-.flex-item p {
-  color: var(--primary);
+  user-select: none;
 }
 
 .flex-item a {
