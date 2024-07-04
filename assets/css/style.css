@@ -201,7 +201,7 @@ main {
 .flex-item h3 {
   color: var(--primary);
   font-size: 1.6rem;
-  --webkit-user-select: none;
+  padding-bottom: 4px;
   user-select: none;
 }
 
@@ -212,10 +212,9 @@ main {
 
 .flex-item:hover a {
   color: var(--light);
-}
-
-.flex-item:hover a::after {
-  content: " - Click Here!";
+  padding: 4px;
+  border: 2px solid var(--light);
+  border-radius: 5px;
 }
 
 .contact address {
@@ -298,13 +297,20 @@ img {
     transition: all 0s;
   }
 
+  .flex-item a {
+    padding: 5px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+  }
+
+
   .flex-item:first-child {
     min-height: 150px;
     flex-basis: 100%;
   }
 
-  .flex-item:active a::after {
-    content: " - Click Here!";
+  .flex-item:hover a::after {
+    content: none;
     transition: all 4s;
   }
 
