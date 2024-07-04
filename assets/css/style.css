@@ -277,6 +277,14 @@ img {
 
 /* TODO: add media query for a max-width of 768px */
 @media screen and (max-width: 768px) {
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero-banner h2 {
+    font-size: 1.3rem;
+  }
+
   .page-section {
     margin: 5px 0;
   }
