@@ -214,7 +214,10 @@ main {
 
 .flex-item:hover a {
   color: var(--light);
-  text-decoration: none;
+}
+
+.flex-item:hover a::after {
+  content: " - Click Here!";
 }
 
 .contact address {
@@ -293,6 +296,12 @@ img {
     min-height: 150px;
     flex-basis: 100%;
   }
+
+  .flex-item:active a::after {
+    content: " - Click Here!";
+    transition: all 4s;
+  }
+
   .contact address {
     flex-direction: column;
   }
